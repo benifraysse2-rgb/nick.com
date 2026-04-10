@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney XD Canada - Time Machine</title>
+    <style>
+        /* Eliminamos los margenes del navegador */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Evita doble barra de scroll */
+            background-color: #000;
+        }
+
+        /* Hacemos que el frame ocupe todo el espacio disponible */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilo para un botón flotante por si quieres volver a tu inicio */
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #00FF00;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 0 15px rgba(0,255,0,0.5);
+            opacity: 0.7;
+        }
+        
+        .back-home:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-home">⬅ VOLVER AL PORTAL</a>
+
+    <iframe src="https://web.archive.org/web/20250624014117/https://www.disneyxd.ca/" 
+            title="Disney XD Canada Archive">
+    </iframe>
+
+</body>
+</html>
